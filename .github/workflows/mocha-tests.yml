@@ -28,6 +28,18 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTION_TOKEN }}
-          publish_dir: ./output
+          publish_dir: ./output/api_tests_report.html
           publish_branch: gh-pages
           publish_dir_html: ./output/api_tests_report.html
+          
+      - name: Archive Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: mochawesome-report
+          path: ./output
+
+      - name: Download Report
+        uses: actions/download-artifact@v2
+        with:
+          name: mochawesome-report
+          path: ./downloaded-report
