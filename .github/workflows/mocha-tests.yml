@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Run Tests and Generate Report
-        run: npm test --reporter mochawesome --reporter-options reportDir=output,reportFilename=api_tests_report
+        run: npm run test-report
 
       - name: Publish Test Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
