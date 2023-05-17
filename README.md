@@ -1,3 +1,5 @@
+[![Mocha Tests](https://github.com/facucz/api-tests-fw/actions/workflows/mocha-tests.yml/badge.svg?branch=master)](https://github.com/facucz/api-tests-fw/actions/workflows/mocha-tests.yml)
+
 # Mocha API Test Repository
 
 This repository contains API tests written using Mocha. The tests are designed to verify the functionality and behavior of your API endpoints.
@@ -6,7 +8,7 @@ This repository contains API tests written using Mocha. The tests are designed t
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
+- Node.js (version 18 or higher)
 - npm (Node Package Manager)
 
 ### Installation
@@ -30,7 +32,8 @@ This repository contains API tests written using Mocha. The tests are designed t
     ```
 
 ### Running Tests
-To run the tests, use the following command:
+
+1. To run the tests, use the following command:
 
     ```shell
     npm test
@@ -39,7 +42,8 @@ To run the tests, use the following command:
 This command will execute the Mocha tests and display the test results in the console.
 
 ### Test Report
-To generate a test report while running the tests, use the following command:
+
+1. To generate a test report while running the tests, use the following command:
 
     ```shell
     npm run test-report
