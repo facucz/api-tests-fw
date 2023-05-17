@@ -23,23 +23,15 @@ jobs:
 
       - name: Run Tests and Generate Report
         run: npm run test-report
-
-      - name: Publish Test Report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.ACTION_TOKEN }}
-          publish_dir: ./output/api_tests_report.html
-          publish_branch: gh-pages
-          publish_dir_html: ./output/api_tests_report.html
           
       - name: Archive Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: mochawesome-report
           path: ./output
 
       - name: Download Report
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: mochawesome-report
           path: ./downloaded-report
