@@ -1,8 +1,8 @@
 [![Mocha Tests](https://github.com/facucz/api-tests-fw/actions/workflows/mocha-tests.yml/badge.svg?branch=master)](https://github.com/facucz/api-tests-fw/actions/workflows/mocha-tests.yml)
 
-# Mocha API Test Repository
+# API Test Repository
 
-This repository contains API tests written using Mocha. The tests are designed to verify the functionality and behavior of your API endpoints.
+This repository contains API tests written in JavaSCript using Mocha as test runner. The tests are designed to verify the functionality and behavior of your API endpoints.
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ This repository contains API tests written using Mocha. The tests are designed t
 2. Navigate to the repository directory:
 
     ```shell
-    cd mocha-api-test-repo
+    cd api-tests-fw
     ```
 
 3. Install the dependencies:
@@ -49,4 +49,4 @@ This command will execute the Mocha tests and display the test results in the co
     npm run test-report
     ```
 
-This command will execute the Mocha tests and generate a detailed test report, which can be found in the specified location (./output). The report provides a summary of test results, including passed, failed, and skipped tests, along with any additional details.
+This command will execute the tests and generate a detailed test report, which can be found in the specified location (./output). The report provides a summary of test results, including passed, failed, and skipped tests, along with any additional details.
